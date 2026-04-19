@@ -2,7 +2,7 @@ import sys, json, urllib.request, ssl, re, os
 sys.stdout.reconfigure(encoding='utf-8')
 
 def _load_env():
-    env_path = os.path.join(os.path.dirname(__file__), '..', '..', '..', '.env')
+    env_path = os.path.join(os.path.dirname(__file__), '..', '..', '.env')
     if os.path.exists(env_path):
         with open(env_path) as f:
             for line in f:
@@ -21,12 +21,13 @@ WORD_MAP = {
     'eight':8,'nine':9,'ten':10,'eleven':11,'twelve':12,'thirteen':13,
     'fourteen':14,'fifteen':15,'sixteen':16,'seventeen':17,'eighteen':18,
     'nineteen':19,'twenty':20,'thirty':30,'forty':40,'fifty':50,
-    'sixty':60,'seventy':70,'eighty':80,'ninety':90
+    'sixty':60,'seventy':70,'eighty':80,'ninety':90,
+    # dedup 깨진 버전 aliases
+    'thre':3,'fiften':15,'nineten':19,'eightene':18,'sixten':16,
 }
 NUM_WORDS = sorted(WORD_MAP.keys(), key=len, reverse=True)
 
-def solve(text):
-    clean = re.sub(r'(.)\1+', r'\1', re.sub(r'[^a-zA-Z]', '', text).lower())
+def _extract_vals(clean):
     vals = []
     i = 0
     while i < len(clean):
@@ -39,6 +40,22 @@ def solve(text):
                 break
         if not matched:
             i += 1
+    return vals
+
+def solve(text):
+    base = re.sub(r'[^a-zA-Z]', '', text).lower()
+    # 먼저 dedup 없이 시도, 숫자 못 찾으면 dedup 적용
+    vals = _extract_vals(base)
+    clean = base
+    if not vals:
+        clean = re.sub(r'(.)\1+', r'\1', base)
+        vals = _extract_vals(clean)
+    else:
+        # dedup 버전도 시도해서 더 많이 찾으면 사용
+        clean2 = re.sub(r'(.)\1+', r'\1', base)
+        vals2 = _extract_vals(clean2)
+        if len(vals2) > len(vals):
+            vals, clean = vals2, clean2
     if not vals:
         return None
     merged = []
@@ -103,13 +120,13 @@ def get_post(post_id):
 def get_comments(post_id, sort='best'):
     return api('GET', f'/posts/{post_id}/comments?sort={sort}')
 
-def post_reply(comment_id, content, label):
-    resp = api('POST', f'/comments/{comment_id}/replies', {'content': content})
+def post_reply(post_id, comment_id, content, label):
+    resp = api('POST', f'/posts/{post_id}/comments', {'content': content, 'parent_id': comment_id})
     if 'error' in resp:
         print(f'ERR reply {label}: {resp.get("msg","")[:80]}')
         return
-    cid = resp.get('reply', {}).get('id','')[:8]
-    vc = resp.get('reply', {}).get('verification', {})
+    cid = resp.get('comment', {}).get('id','')[:8]
+    vc = resp.get('comment', {}).get('verification', {})
     if not vc:
         print(f'OK reply {label}: {cid}')
         return

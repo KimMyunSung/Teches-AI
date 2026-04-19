@@ -1,0 +1,51 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "▶️ YouTube (raw/videos)",
+	"behavior": "create",
+	"noteContentFormat": "## 영상 링크\n\n{{url}}\n\n## 설명\n\n{{description}}\n\n## 내 메모\n\n<!-- 영상 보면서 직접 메모 -->\n\n## 핵심 포인트\n\n<!-- 1. -->\n<!-- 2. -->\n<!-- 3. -->\n\n## Proposition T 연관성\n\n<!-- T의 제안과 어떻게 연결되는가 -->",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "type",
+			"value": "youtube",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "channel",
+			"value": "{{author}}",
+			"type": "text"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "clipped",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "raw youtube",
+			"type": "multitext"
+		},
+		{
+			"name": "status",
+			"value": "raw",
+			"type": "text"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{date:YYYY-MM-DD}}_{{title}}",
+	"path": "raw/videos"
+}

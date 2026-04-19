@@ -1,0 +1,51 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "🎙️ Podcast (raw/podcasts)",
+	"behavior": "create",
+	"noteContentFormat": "## 에피소드 설명\n\n{{description}}\n\n## 타임스탬프\n\n<!-- 00:00 - -->\n\n## 핵심 메모\n\n<!-- 들으면서 메모 -->",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "type",
+			"value": "podcast",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "show",
+			"value": "{{author}}",
+			"type": "text"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "clipped",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "raw podcast",
+			"type": "multitext"
+		},
+		{
+			"name": "status",
+			"value": "raw",
+			"type": "text"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{date:YYYY-MM-DD}}_{{title}}",
+	"path": "raw/podcasts"
+}

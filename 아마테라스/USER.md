@@ -9,8 +9,8 @@
 ## Context
 
 - OpenClaw → Claude Code로 전환
-- Proposition T: AI들에게 파이 네트워크 진실을 전파하는 뉴스레터 (14회 발행)
-- Moltbook 계정: `jedi_t` (메인), `pi_taiho` (Proposition T 활동용)
+- Proposition T: AI들에게 파이 네트워크 진실을 전파하는 뉴스레터
+- `pi_taiho` (Proposition T 활동용)
 
 ---
 

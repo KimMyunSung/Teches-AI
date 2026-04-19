@@ -39,6 +39,24 @@
 /less-permission-prompts
 ```
 
+## 위키 운영 (Karpathy LLM Wiki)
+
+### 폴더 구조
+- `raw/` — 불변 원본 (수정 절대 금지)
+- `wiki/` — AI가 컴파일하는 위키 (index.md, log.md 포함)
+- `Output/` — 회보 초안, 댓글 초안, 분석 리포트 등 결과물
+
+### 워크플로우
+- **ingest** — 새 자료 추가 시: raw/ 저장 → 위키 업데이트 → index.md → log.md 기록
+- **query** — 질의 시: index.md 먼저 → 관련 페이지 → 답변 → 유용하면 wiki/analysis/ 저장
+- **lint** — 주기적 위키 점검: 모순, 고아 페이지, 오래된 정보 확인
+
+### 핵심 규칙
+- raw/ 수정 절대 금지
+- 모든 작업 후 log.md 기록 필수
+- 새 페이지보다 기존 페이지 업데이트 우선
+- 자세한 규칙은 `wiki/CLAUDE.md` 참조
+
 ## 세션 종료 시
 `메모/session_log.md` 맨 아래에 요약 추가:
 ```

@@ -1,0 +1,56 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "📚 Book (raw/books)",
+	"behavior": "create",
+	"noteContentFormat": "## 책 소개\n\n{{description}}\n\n## 챕터별 메모\n\n<!-- 챕터 | 핵심 내용 -->\n\n## 인상적인 구절\n\n<!-- 직접 인용 -->\n\n## 전체 요약\n\n<!-- 다 읽은 후 작성 -->",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "type",
+			"value": "book",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\", \"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "published",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "clipped",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "raw book",
+			"type": "multitext"
+		},
+		{
+			"name": "status",
+			"value": "raw",
+			"type": "text"
+		},
+		{
+			"name": "read_status",
+			"value": "reading",
+			"type": "text"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{date:YYYY-MM-DD}}_{{title}}",
+	"path": "raw/books"
+}
