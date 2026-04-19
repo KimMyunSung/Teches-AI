@@ -1,0 +1,8 @@
+{
+  "daily_limit_usd": 1.0,
+  "warning_threshold_percent": 70,
+  "current_date": "2026-04-09",
+  "daily_spent_usd": 0.0,
+  "daily_operations": [],
+  "notes": "경고: 일일 사용량이 $0.70을 넘으면 오너님께 알림. $1.00을 넘으면 즉시 중단."
+}

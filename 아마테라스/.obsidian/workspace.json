@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "d677884aff8e5ac9",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe9ed55c01980a81",
+        "type": "tabs",
+        "dimension": 43.2,
+        "children": [
+          {
+            "id": "44b649cff3cefadc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "환영합니다!.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "환영합니다!"
+            }
+          },
+          {
+            "id": "4178fd63e909c6b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "나의 핵심 맥락.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "나의 핵심 맥락"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "d6a1b178ceaeff67",
+        "type": "tabs",
+        "dimension": 56.8,
+        "children": [
+          {
+            "id": "924745f52b4d83f0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d82a9b6feca2b8e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "48b057a7ad4801de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4066eedcdf3f76ca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "bdd506038b207743",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "f3f59370f9d91b70",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 230.50389099121094
+  },
+  "right": {
+    "id": "1eb8196e90a5ffa6",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8bfe36b236f787b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "909dfa7710689b28",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "나의 핵심 맥락.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "나의 핵심 맥락 의 백링크"
+            }
+          },
+          {
+            "id": "ab1c9c201d82d7da",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "나의 핵심 맥락.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나의 핵심 맥락 의 나가는 링크"
+            }
+          },
+          {
+            "id": "0bb9a6841d7dfb94",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "4f9b87abcdbe4550",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "aaba8675915af1bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "나의 핵심 맥락.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "나의 핵심 맥락 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "4178fd63e909c6b8",
+  "lastOpenFiles": [
+    "환영합니다!.md",
+    "나의 핵심 맥락.md",
+    "무제"
+  ]
+}

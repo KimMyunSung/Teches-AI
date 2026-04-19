@@ -1,0 +1,83 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "☀️ 아마테라스",
+      "type": "shell",
+      "command": "claude",
+      "options": {
+        "cwd": "C:\\Users\\gussa\\Desktop\\Claude\\아마테라스",
+        "env": {
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true,
+        "close": false,
+        "tabColor": "#FFD700"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "⚫ RealBlack",
+      "type": "shell",
+      "command": "claude",
+      "options": {
+        "cwd": "C:\\Users\\gussa\\Desktop\\Claude\\RealBlack",
+        "env": {
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": false,
+        "close": false,
+        "tabColor": "#1a1a2e"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "🏆 Level.1",
+      "type": "shell",
+      "command": "claude",
+      "options": {
+        "cwd": "C:\\Users\\gussa\\Desktop\\Claude\\Level.1",
+        "env": { "PYTHONIOENCODING": "utf-8" }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": false,
+        "close": false,
+        "tabColor": "#FFD700"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": { "instanceLimit": 1 }
+    },
+    {
+      "label": "🚀 RealBlack 시작",
+      "dependsOn": ["⚫ RealBlack"],
+      "dependsOrder": "parallel",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+import json, urllib.request, re, threading, sys
+import ssl
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
+API_KEY = "moltbook_sk_cEBiNx89xV6F9gX-16pDEXAjMB_Wek07"
+BASE = "https://moltbook.com/api/v1"
+ctx = ssl.create_default_context()
+
+def api(method, path, body=None):
+    url = BASE + path
+    data = json.dumps(body).encode('utf-8') if body else None
+    req = urllib.request.Request(url, data=data, method=method, headers={
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json"
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=20, context=ctx) as r:
+            return json.loads(r.read().decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode('utf-8', errors='replace')
+        return {"error": e.code, "msg": body}
+
+WORD_MAP = {
+    'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,
+    'eight':8,'nine':9,'ten':10,'eleven':11,'twelve':12,'thirteen':13,
+    'fourteen':14,'fifteen':15,'sixteen':16,'seventeen':17,'eighteen':18,
+    'nineteen':19,'twenty':20,'thirty':30,'forty':40,'fifty':50,
+    'sixty':60,'seventy':70,'eighty':80,'ninety':90
+}
+
+def solve_challenge(text):
+    txt = text.lower()
+    # 숫자 단어 토큰 추출
+    tokens = re.findall(r'\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)\b', txt)
+    values = []
+    i = 0
+    while i < len(tokens):
+        w = tokens[i]
+        if w in ['twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'] and i+1 < len(tokens):
+            nw = tokens[i+1]
+            if nw in ['one','two','three','four','five','six','seven','eight','nine']:
+                values.append(WORD_MAP[w] + WORD_MAP[nw])
+                i += 2
+                continue
+        values.append(WORD_MAP.get(w, 0))
+        i += 1
+    if not values:
+        return None
+    subtract = any(x in txt for x in ['slow','los','reduc','decreas','minus','subtract','fewer','less','molt','shed'])
+    if subtract and len(values) >= 2:
+        return f"{values[0] - values[1]:.2f}"
+    return f"{sum(values):.2f}"
+
+def post_and_verify(post_id, content, label=""):
+    # em dash 등 특수문자 대체
+    safe_content = content.replace('\u2014', '--').replace('\u2013', '-').replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
+    resp = api("POST", f"/posts/{post_id}/comments", {"content": safe_content})
+    if "error" in resp:
+        print(f"ERR {label}: {resp.get('error')} {resp.get('msg','')[:80]}", flush=True)
+        return
+    comment = resp.get("comment", {})
+    cid = comment.get("id","")[:8]
+    vc = comment.get("verification", {})
+    if not vc:
+        print(f"OK {label}: comment={cid} (auto-published)", flush=True)
+        return
+    code = vc["verification_code"]
+    challenge = vc["challenge_text"]
+    answer = solve_challenge(challenge)
+    if not answer:
+        print(f"UNSOLVABLE {label}: {challenge[:80]}", flush=True)
+        return
+    vresp = api("POST", "/verify", {"verification_code": code, "answer": answer})
+    if vresp.get("success"):
+        print(f"VERIFIED {label}: comment={cid} ans={answer}", flush=True)
+    else:
+        print(f"WRONG {label}: ans={answer} resp={vresp}", flush=True)
+
+def follow(name):
+    resp = api("POST", f"/agents/{name}/follow")
+    print(f"FOLLOW {name}: {resp.get('message','')}", flush=True)
+
+def upvote(post_id):
+    resp = api("POST", f"/posts/{post_id}/upvote")
+    print(f"UPVOTE {post_id[:8]}: {resp.get('message','')[:40]}", flush=True)

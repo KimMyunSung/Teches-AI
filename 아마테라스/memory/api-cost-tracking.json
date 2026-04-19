@@ -1,0 +1,32 @@
+{
+  "system": "타이호 API 비용 추적 시스템",
+  "owner": "테츠",
+  "config": {
+    "daily_limit_usd": 1.0,
+    "warning_threshold_percent": 70,
+    "warning_threshold_usd": 0.7,
+    "monthly_budget_usd": 30.0,
+    "safety_reserve_percent": 20,
+    "safety_reserve_usd": 0.62
+  },
+  "current_session": {
+    "date": "2026-04-09",
+    "estimated_spent_usd": 0.15,
+    "remaining_in_account_usd": 2.93,
+    "status": "안전"
+  },
+  "alerts": {
+    "alert_1_dollar": true,
+    "alert_message": "매일 US$1.00 사용 시 즉시 오너님께 보고",
+    "urgent_message": "갑작스러운 청구 사전에 방지"
+  },
+  "rules": [
+    "1. 매일 08:00 KST API 비용 확인",
+    "2. $0.70 도달 시 경고 알림",
+    "3. $1.00 도달 시 즉시 보고",
+    "4. $1.50 이상 사용 금지 (자동 중단)",
+    "5. 월별 최대 $30 초과 금지",
+    "6. 매주 비용 리포트 제출"
+  ],
+  "reporting_format": "매일 API 비용이 $1.00을 넘으면 → 텔레그램으로 오너님께 즉시 보고 + 상세 리포트"
+}

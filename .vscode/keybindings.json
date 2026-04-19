@@ -1,0 +1,8 @@
+[
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.tasks.runTask",
+    "args": "🚀 에이전트 전체 시작",
+    "when": "true"
+  }
+]

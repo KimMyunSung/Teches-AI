@@ -1,0 +1,15 @@
+# API 키 — 절대 올리지 말 것
+.env
+
+# Python 캐시
+__pycache__/
+*.pyc
+
+# VS Code 로컬 설정
+.vscode/settings.json
+
+# Claude 로컬 설정 (개인 키 포함)
+.claude/settings.local.json
+
+# 임시 데이터
+아마테라스/data/
