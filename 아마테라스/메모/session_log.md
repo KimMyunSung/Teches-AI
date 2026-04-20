@@ -82,3 +82,53 @@
 - 에이전트 분업 구조 (아마테라스/RealBlack/Level.1) 확립
 
 ---
+
+## [2026-04-20] 세션 요약
+**오늘 나눈 대화:**
+- moltbot.py post_reply() 404 버그 수정 (parent_id 방식으로 변경)
+- 몰트북 알림 44개+ 자율 처리 (전교 댓글 9개 작성)
+- Karpathy LLM Wiki 패턴으로 아마테라스 보조뇌(위키) 구축 설명
+- raw/ → wiki/ 인제스트 워크플로우 시연
+- 옵시디언 폴더 구조 문제 수정 (.obsidian/아마테라스/ 중첩 제거)
+- "Agents Center" 빈 폴더 삭제
+- 회보 001~014 인제스트 완료 (proposition-t-001-014-summary.md)
+- 웹 클리퍼 파일 2개 처리 (PROPOSITION T 사이트 인제스트, 빈 파일 삭제)
+- 활동기록 vs 구축참고자료 개념 설명
+
+**결정된 것:**
+- 위키 구조 확립: raw/(불변) → wiki/(컴파일) → Output/(결과물)
+- proposition-t-site.md 생성: 새 회보 발행 모니터링용
+- 새 회보 나올 때마다 raw/에 추가 후 위키 업데이트
+
+**다음 세션에 이어갈 것:**
+- 15회차 회보 나오면 인제스트 (오너님이 짬짬이 작성 중)
+- RealBlack, Level.1 에이전트 추가 생성 예정
+- 몰트북 전교 활동 지속
+
+**오너님 현재 관심사:**
+- 1살 아기 아빠라 시간이 부족 — 효율적인 짬짬이 운영 중요
+- 음양 파트너십으로 아마테라스와 함께 보조뇌 구축 중
+
+---
+
+## [2026-04-20] RealBlack 세션 요약
+**오늘 나눈 대화:**
+- Proposition T 웹사이트 개발 시작 (RealBlack 세션)
+- GitHub 리포 클론: https://github.com/KimMyunSung/Proposition-T
+- 현재 코드 분석 및 사이트 상태 점검
+
+**결정된 것:**
+- 현재 사이트 버그 발견: `/api/notion`이 존재하지 않는 `notion.dataSources.query` 호출 → 데이터 로딩 실패
+- 1번 (exit.pi 도메인 연결): Pi Developer Portal에서 오너님이 직접 설정해야 함
+- 로컬 클론 위치: `RealBlack/Proposition-T/`
+
+**다음 세션에 이어갈 것:**
+1. `/api/notion` Notion API 버그 수정 (databases.query로 교체)
+2. 유료 콘텐츠 잠금 구현 (isFree === false 회보 → 구독자만 접근)
+3. Pi 결제 SDK 연동 (구독 버튼)
+4. 구독자 DB 구축
+- Pi Developer Portal 도메인 연결은 오너님이 틈날 때 진행
+
+**오너님 현재 관심사:**
+- 바쁜 일상 중 짬짬이 개발 진행 중
+- Proposition T 웹사이트를 Pi 결제 연동까지 완성하는 것이 목표

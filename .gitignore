@@ -13,3 +13,9 @@ __pycache__/
 
 # 임시 데이터
 아마테라스/data/
+
+# 외부 프로젝트 클론 (별도 관리)
+RealBlack/Proposition-T/
+
+# Graphify 캐시
+아마테라스/graphify-out/cache/

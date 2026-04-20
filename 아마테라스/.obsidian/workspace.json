@@ -4,66 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "f2624a8656e5f8bb",
-        "type": "split",
+        "id": "65a6c84eed60f2e9",
+        "type": "tabs",
         "children": [
           {
-            "id": "3b6f8d5b820d4fde",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ad5af4f8d7137f3d",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "그래프 뷰"
-                }
-              }
-            ]
-          },
-          {
-            "id": "65a6c84eed60f2e9",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "50a6dff83e75aa90",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "C:\\Users\\gussa\\Desktop\\Claude\\아마테라스",
-                      "focus": false,
-                      "profile": {
-                        "followTheme": true,
-                        "name": "",
-                        "restoreHistory": false,
-                        "rightClickAction": "copyPaste",
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {
-                          "documentOverride": null
-                        },
-                        "type": "developerConsole"
-                      },
-                      "serial": null
-                    }
+            "id": "50a6dff83e75aa90",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "C:\\Users\\gussa\\Desktop\\Claude\\아마테라스",
+                  "focus": false,
+                  "profile": {
+                    "followTheme": true,
+                    "name": "",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "developerConsole"
                   },
-                  "pinned": true,
-                  "icon": "terminal",
-                  "title": "터미널: 개발자 콘솔"
+                  "serial": null
                 }
-              }
-            ]
+              },
+              "pinned": true,
+              "icon": "terminal",
+              "title": "터미널: 개발자 콘솔"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,20 +214,33 @@
   },
   "active": "50a6dff83e75aa90",
   "lastOpenFiles": [
+    "wiki/source/science-evidence-001-014.md",
+    "raw/moltbook/2026-04-20_활동기록.md",
+    "Output/broadcast",
+    "무제.canvas",
+    "raw/science/2026-04-20_proposition-t-001-014-science-evidence.md",
+    "raw/science",
+    "raw/articles/_PROPOSITION T.md",
+    "Excalidraw/Drawing 2026-04-20 11.34.58.excalidraw.md",
+    "Excalidraw/Drawing 2026-04-20 11.34.09.excalidraw.md",
+    "wiki/log.md.tmp.13064.1776652446037",
+    "wiki/source/llm-wiki-setup-guide.md",
+    "raw/books/2026-04-20_카파시-LLM-Wiki-세컨드브레인-가이드.md",
+    "graphify-out/graph.html",
+    "graphify-out/graph.json",
+    "graphify-out/GRAPH_REPORT.md",
+    "graphify-out/cache/b36cd5c149b60bb178632b6d30f3b63bfb407281e11510e8674c8c469b0f6eec.json",
+    "graphify-out/cache/316d7aa4317bd3bec4e2c320f84135ddc64fbfecfc45d3d31bfc62557da3b872.json",
+    "graphify-out/cache/81a76fd1a5b3f919acabe5955c03efce690ab1337a0411f45e0e006dfcfbaaa6.json",
+    "graphify-out/cache/e3c2412ee45aa6bca0554b251221b4676972c33ab66c06a8a81708bc84cffb98.json",
+    "graphify-out/cache/8b408ff2cabc4e68aa94c43f138c4712f101c798d2e7b37dc92a5016b788953d.json",
+    "wiki/source/proposition-t-site.md",
+    "raw/books/_프롬프트 카파시의 LLM Wiki로 나만의 AI 세컨드 브레인 만들기, 시도해봤습니다 — 클로드 코드 × 옵시디언 × Graphify.md",
+    "raw/videos/_프롬프트 카파시의 LLM Wiki로 나만의 AI 세컨드 브레인 만들기, 시도해봤습니다 — 클로드 코드 × 옵시디언 × Graphify.md",
     "Excalidraw/Drawing 2026-04-20 10.37.00.excalidraw.md",
-    "Excalidraw",
     "raw/videos/_Playlist  우리 그 때 예뻤지 빛바랜 흑백 사진 속 노스탤지어  은빛 추억의 7080 팝송🎻 Chamber & Baroque Pop🌹.md",
     "message-002.md",
     "raw/articles/_이재명 대통령, 인도 동포만찬간담회 입장.md",
-    "clipper-research.json",
-    "clipper-book.json",
-    "clipper-podcast.json",
-    "clipper-podcast.json.tmp.23064.1776612213070",
-    "clipper-youtube.json",
-    "clipper-article.json",
-    "raw/research",
-    "raw/books",
-    "raw/podcasts",
     "wiki/proposition-t-001-014-summary.md",
     "wiki/moltbook-contacts.md",
     "wiki/amateras.md",
@@ -260,12 +250,6 @@
     "wiki/log.md",
     "wiki/index.md",
     "_wiki-rules.md",
-    "log.md",
-    "index.md",
-    "source/proposition-t-001-014-summary.md",
-    "entity/moltbook-contacts.md",
-    "entity/amateras.md",
-    "concept/proposition-t.md",
-    "concept/pi-network.md"
+    "log.md"
   ]
 }
