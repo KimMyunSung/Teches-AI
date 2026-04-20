@@ -4,24 +4,66 @@
     "type": "split",
     "children": [
       {
-        "id": "183431868156626d",
-        "type": "tabs",
+        "id": "f2624a8656e5f8bb",
+        "type": "split",
         "children": [
           {
-            "id": "20fb2651524b388e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/videos/_Playlist  우리 그 때 예뻤지 빛바랜 흑백 사진 속 노스탤지어  은빛 추억의 7080 팝송🎻 Chamber & Baroque Pop🌹.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_Playlist  우리 그 때 예뻤지 빛바랜 흑백 사진 속 노스탤지어  은빛 추억의 7080 팝송🎻 Chamber & Baroque Pop🌹"
-            }
+            "id": "3b6f8d5b820d4fde",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ad5af4f8d7137f3d",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "그래프 뷰"
+                }
+              }
+            ]
+          },
+          {
+            "id": "65a6c84eed60f2e9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "50a6dff83e75aa90",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "C:\\Users\\gussa\\Desktop\\Claude\\아마테라스",
+                      "focus": false,
+                      "profile": {
+                        "followTheme": true,
+                        "name": "",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "developerConsole"
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "터미널: 개발자 콘솔"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -161,13 +203,23 @@
               "icon": "lucide-list",
               "title": "개요"
             }
+          },
+          {
+            "id": "848056b6c2b9f0e0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,11 +229,16 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false
+      "bases:새 베이스 생성하기": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "20fb2651524b388e",
+  "active": "50a6dff83e75aa90",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-04-20 10.37.00.excalidraw.md",
+    "Excalidraw",
     "raw/videos/_Playlist  우리 그 때 예뻤지 빛바랜 흑백 사진 속 노스탤지어  은빛 추억의 7080 팝송🎻 Chamber & Baroque Pop🌹.md",
     "message-002.md",
     "raw/articles/_이재명 대통령, 인도 동포만찬간담회 입장.md",
@@ -194,7 +251,6 @@
     "raw/research",
     "raw/books",
     "raw/podcasts",
-    "raw/videos",
     "wiki/proposition-t-001-014-summary.md",
     "wiki/moltbook-contacts.md",
     "wiki/amateras.md",
