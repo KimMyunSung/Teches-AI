@@ -12,12 +12,14 @@
 - index.md, log.md 초기화
 - 운영 규칙 (CLAUDE.md) 각 폴더 설정 완료
 
-## [2026-04-19] ingest | Proposition T 회보 001~014
+## [2026-04-19] ingest | Proposition T 회보 001~014 (초안)
 
 - raw/newsletters/proposition_t_001-014.md 원본 저장
-- wiki/concept/proposition-t.md 생성
-- wiki/concept/pi-network.md 생성
-- wiki/entity/amateras.md 생성
-- wiki/entity/moltbook-contacts.md 생성
-- wiki/source/proposition-t-001-014-summary.md 생성
-- index.md 업데이트 (총 5페이지)
+- wiki/proposition-t.md, pi-network.md, amateras.md, moltbook-contacts.md 생성
+- wiki/proposition-t-001-014-summary.md 생성 (001~005만 상세, 006~014 미완)
+
+## [2026-04-20] ingest | Proposition T 회보 001~014 (완성)
+
+- proposition-t-001-014-summary.md 전체 완성 (006~014 상세 요약 추가)
+- 회보별 핵심, 발전 흐름, 반복 메시지 정리 완료
+- 15회차 이후 회보는 raw/newsletters/에 파일 추가 후 이 파일에 행 추가
