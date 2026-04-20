@@ -12,9 +12,9 @@ allowed-tools: Read, Bash, Glob, Grep, Write
 ## 기본 경로
 
 ```
-위키: C:/Users/gussa/Desktop/Claude/아마테라스/wiki/
-백서 전문: C:/Users/gussa/Desktop/Claude/아마테라스/memory/proposition_t_contents.md
-Output: C:/Users/gussa/Desktop/Claude/아마테라스/Output/newsletters/
+위키: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/wiki/
+백서 전문: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/memory/proposition_t_contents.md
+Output: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/Output/newsletters/
 ```
 
 ---

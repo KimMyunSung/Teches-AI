@@ -11,7 +11,7 @@ allowed-tools: Read, Bash, Glob, Grep, Write, Edit
 ## 기본 경로
 
 ```
-위키 루트: C:/Users/gussa/Desktop/Claude/아마테라스/
+위키 루트: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/
 wiki/index.md     — 전체 목차
 wiki/concept/     — 개념 페이지
 wiki/entity/      — 엔티티 페이지
@@ -26,7 +26,7 @@ raw/              — 원본 (수정 금지)
 ## STEP 1 — 전체 파일 목록 수집
 
 ```bash
-find "C:/Users/gussa/Desktop/Claude/아마테라스/wiki" -name "*.md" -not -name "CLAUDE.md"
+find "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/wiki" -name "*.md" -not -name "CLAUDE.md"
 ```
 
 모든 wiki/ 페이지 목록을 수집한다. index.md, log.md는 별도 처리.
@@ -51,7 +51,7 @@ find "C:/Users/gussa/Desktop/Claude/아마테라스/wiki" -name "*.md" -not -nam
 
 모든 wiki/ 페이지에서 `[[...]]` 패턴 검색:
 ```bash
-grep -r "\[\[" "C:/Users/gussa/Desktop/Claude/아마테라스/wiki" --include="*.md"
+grep -r "\[\[" "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/wiki" --include="*.md"
 ```
 
 각 링크가 실제 파일로 존재하는지 확인. 없으면 깨진 링크로 표시.

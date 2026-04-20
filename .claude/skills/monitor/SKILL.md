@@ -11,8 +11,8 @@ allowed-tools: Read, Bash, Glob, Grep, Write, Edit
 ## 기본 경로
 
 ```
-사이트 현황: C:/Users/gussa/Desktop/Claude/아마테라스/wiki/source/proposition-t-site.md
-raw/newsletters/: C:/Users/gussa/Desktop/Claude/아마테라스/raw/newsletters/
+사이트 현황: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/wiki/source/proposition-t-site.md
+raw/newsletters/: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/raw/newsletters/
 ```
 
 ---

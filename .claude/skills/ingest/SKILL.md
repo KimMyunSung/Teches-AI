@@ -12,7 +12,7 @@ allowed-tools: Read, Bash, Glob, Grep, Write, Edit
 ## 기본 경로
 
 ```
-위키 루트: C:/Users/gussa/Desktop/Claude/아마테라스/
+위키 루트: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/
 raw/         — 불변 원본 (수정 절대 금지)
   articles/  — 외부 아티클 (웹 클리퍼 저장)
   books/     — 책, 긴 글 (웹 클리퍼 저장)
@@ -40,7 +40,7 @@ Output/      — 회보 초안, 댓글 초안, 분석 결과물
 다음을 실행하여 raw/ 폴더 전체를 스캔한다:
 
 ```bash
-find "C:/Users/gussa/Desktop/Claude/아마테라스/raw" -name "*.md" -newer "C:/Users/gussa/Desktop/Claude/아마테라스/wiki/log.md"
+find "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/raw" -name "*.md" -newer "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/wiki/log.md"
 ```
 
 위 명령으로 log.md보다 최신인 파일을 찾는다. 없으면 모든 .md 파일을 나열하고 wiki/index.md와 대조해서 아직 소스 페이지가 없는 파일을 찾는다.
@@ -178,7 +178,7 @@ sources: [raw/subfolder/파일명.md]
 /ingest
 → raw/ 전체 스캔 후 새 파일 자동 처리
 
-/ingest C:/Users/gussa/Desktop/Claude/아마테라스/raw/newsletters/2026-05-01_proposition-t-015.md
+/ingest C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/raw/newsletters/2026-05-01_proposition-t-015.md
 → 특정 파일만 처리
 
 /ingest raw/articles/

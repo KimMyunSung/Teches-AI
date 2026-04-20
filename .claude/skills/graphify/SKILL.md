@@ -12,7 +12,7 @@ allowed-tools: Read, Bash, Glob, Grep, Write, Edit
 ## 기본 경로
 
 ```
-위키 루트: C:/Users/gussa/Desktop/Claude/아마테라스/
+위키 루트: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/
 wiki/           — 그래프 빌드 대상
 graphify-out/   — 결과물 저장 폴더 (자동 생성)
   graph.json    — AI가 참조하는 그래프 데이터
@@ -26,19 +26,19 @@ graphify-out/   — 결과물 저장 폴더 (자동 생성)
 
 ### `/graphify` — 전체 빌드
 ```bash
-cd "C:/Users/gussa/Desktop/Claude/아마테라스" && graphify wiki/
+cd "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스" && graphify wiki/
 ```
 wiki/ 전체를 읽어 그래프 생성. 처음 실행 또는 대규모 변경 후 사용.
 
 ### `/graphify --update` — 증분 업데이트
 ```bash
-cd "C:/Users/gussa/Desktop/Claude/아마테라스" && graphify wiki/ --update
+cd "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스" && graphify wiki/ --update
 ```
 새로 추가된 파일만 업데이트. 토큰 절약. 인제스트 후 습관적으로 실행.
 
 ### `/graphify query "[질문]"` — 그래프 기반 질의
 ```bash
-cd "C:/Users/gussa/Desktop/Claude/아마테라스" && graphify query "[질문]"
+cd "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스" && graphify query "[질문]"
 ```
 노드·엣지 관계를 탐색해서 의미적 연결 기반으로 답변.
 

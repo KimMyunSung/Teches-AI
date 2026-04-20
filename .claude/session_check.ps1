@@ -1,4 +1,4 @@
-﻿$logFile = "C:\Users\gussa\Desktop\Claude\아마테라스\메모\session_log.md"
+﻿$logFile = "C:\Users\gussa\Desktop\oneteam\amateras\아마테라스\메모\session_log.md"
 $today = (Get-Date -Format "yyyy-MM-dd")
 if (Select-String -Path $logFile -Pattern $today -Quiet) {
     exit 0

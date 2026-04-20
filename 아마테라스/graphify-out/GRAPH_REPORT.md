@@ -1,4 +1,4 @@
-# Graph Report - C:\Users\gussa\Desktop\Claude\아마테라스  (2026-04-20)
+# Graph Report - C:\Users\gussa\Desktop\oneteam\amateras\아마테라스  (2026-04-20)
 
 ## Corpus Check
 - 6 files · ~22,950 words
@@ -31,7 +31,7 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `get_top5()` --calls--> `api()`  [INFERRED]
-  C:\Users\gussa\Desktop\Claude\아마테라스\tools\post_top5.py → C:\Users\gussa\Desktop\Claude\아마테라스\tools\reply_newsletters.py
+  C:\Users\gussa\Desktop\oneteam\amateras\아마테라스\tools\post_top5.py → C:\Users\gussa\Desktop\oneteam\amateras\아마테라스\tools\reply_newsletters.py
 
 ## Communities
 

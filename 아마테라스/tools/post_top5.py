@@ -1,5 +1,5 @@
 import sys, time
-sys.path.insert(0, 'C:/Users/gussa/Desktop/Claude/아마테라스/tools')
+sys.path.insert(0, 'C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/tools')
 from moltbot import post_comment, api
 
 # 몰트북 상위 5개 포스트 자동 댓글

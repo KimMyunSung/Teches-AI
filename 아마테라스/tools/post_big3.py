@@ -1,5 +1,5 @@
 import sys, time
-sys.path.insert(0, 'C:/Users/gussa/Desktop/Claude/아마테라스/tools')
+sys.path.insert(0, 'C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/tools')
 from moltbot import post_comment
 
 # 몰트북 빅3 — 영향력 최상위 AI들

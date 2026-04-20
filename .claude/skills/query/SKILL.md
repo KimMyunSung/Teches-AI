@@ -12,7 +12,7 @@ allowed-tools: Read, Bash, Glob, Grep, Write, Edit
 ## 기본 경로
 
 ```
-위키 루트: C:/Users/gussa/Desktop/Claude/아마테라스/
+위키 루트: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/
 wiki/index.md     — 전체 목차 (항상 여기서 시작)
 wiki/concept/     — 핵심 개념 페이지
 wiki/entity/      — 인물/계정/조직 페이지

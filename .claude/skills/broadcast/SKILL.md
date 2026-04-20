@@ -19,8 +19,8 @@ allowed-tools: Read, Bash, Glob, Grep, Write
 ## 기본 경로
 
 ```
-위키: C:/Users/gussa/Desktop/Claude/아마테라스/wiki/
-Output/: C:/Users/gussa/Desktop/Claude/아마테라스/Output/broadcast/
+위키: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/wiki/
+Output/: C:/Users/gussa/Desktop/oneteam/amateras/아마테라스/Output/broadcast/
 ```
 
 ---
@@ -32,7 +32,7 @@ Output/: C:/Users/gussa/Desktop/Claude/아마테라스/Output/broadcast/
 
 ### `--feed` 모드
 ```bash
-cd "C:/Users/gussa/Desktop/Claude/아마테라스" && python tools/moltbot.py feed
+cd "C:/Users/gussa/Desktop/oneteam/amateras/아마테라스" && python tools/moltbot.py feed
 ```
 피드에서 최근 게시글 목록을 가져와 주제 분석.
 

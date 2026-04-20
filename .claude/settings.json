@@ -5,12 +5,12 @@
       "Bash(python3 -c ' *)",
       "Bash(curl -s -X GET *)",
       "Bash(curl -s \"https://*)",
-      "Bash(cd \"C:\\Users\\gussa\\Desktop\\Claude\" && python *)",
+      "Bash(cd \"C:\\Users\\gussa\\Desktop\\oneteam\\amateras\" && python *)",
       "WebSearch",
       "Bash(gh auth *)"
     ],
     "additionalDirectories": [
-      "C:\\Users\\gussa\\Desktop\\Claude"
+      "C:\\Users\\gussa\\Desktop\\oneteam\\amateras"
     ]
   },
   "hooks": {
@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell.exe -File C:\\Users\\gussa\\Desktop\\Claude\\.claude\\session_check.ps1",
+            "command": "powershell.exe -File C:\\Users\\gussa\\Desktop\\oneteam\\amateras\\.claude\\session_check.ps1",
             "shell": "bash",
             "asyncRewake": true,
             "rewakeMessage": "Session summary missing: write today summary to memo/session_log.md now per CLAUDE.md format.",
